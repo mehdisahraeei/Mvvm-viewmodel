@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <co.ceryle.radiorealbutton.RadioRealButtonGroup
+        android:id="@+id/group"
+        android:layout_width="177dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:rrbg_animateDrawables_enter="fastOutSlowIn"
+        app:rrbg_animateTexts_enter="linearOutSlowIn"
+        app:rrbg_backgroundColor="@color/backgroundbuttonRadio"
+        app:rrbg_radius="20dp"
+        app:rrbg_selectorSize="0dp">
+
+
+        <co.ceryle.radiorealbutton.RadioRealButton
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:rrb_drawable="@drawable/signin"
+            app:rrb_drawableHeight="40dp"
+            app:rrb_drawablePadding="4dp"
+            app:rrb_drawableWidth="40dp"
+            app:rrb_textColor="@color/BlackDark" />
+
+
+        <co.ceryle.radiorealbutton.RadioRealButton
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:rrb_drawable="@drawable/signup"
+            app:rrb_drawableHeight="40dp"
+            app:rrb_drawablePadding="4dp"
+            app:rrb_drawableWidth="40dp"
+            app:rrb_textColor="@color/BlackDark" />
+
+    </co.ceryle.radiorealbutton.RadioRealButtonGroup>
+
+
+
+    <FrameLayout
+        android:id="@+id/frame1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/group" />
+
+
+
+</RelativeLayout>
+
+
+</layout>
+
