@@ -12,10 +12,12 @@ import com.my.viewmodel.R;
 import com.my.viewmodel.databinding.FragmentoneBinding;
 import com.my.viewmodel.model.ModelFragments;
 import com.my.viewmodel.viewmodel.Viewmodel1;
-
+import lal.adhish.gifprogressbar.GifView;
 
 
 public class fragment1 extends Fragment {
+
+
 
     @Nullable
     @Override
@@ -25,6 +27,10 @@ public class fragment1 extends Fragment {
                 fragmentone,null,false);
         binding.setModelone(new Viewmodel1(new ModelFragments("login")));
         View view=binding.getRoot();
+
+        GifView gif1=view.findViewById(R.id.Gif1);
+        gif1.setImageResource(R.drawable.gif1);
+
 
         return view;
     }

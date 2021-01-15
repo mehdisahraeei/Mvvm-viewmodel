@@ -6,6 +6,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
+
 import com.my.viewmodel.Fragments.fragment1;
 import com.my.viewmodel.Fragments.fragment2;
 import com.my.viewmodel.databinding.ActivityMainBinding;
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         RadioRealButtonGroup group = (RadioRealButtonGroup) findViewById(R.id.group);
 //---------------------------casting--------------------------------------------------------------------------
 
+        Toast.makeText(this, "welcome.", Toast.LENGTH_SHORT).show();
 
 
         group.setOnClickedButtonListener(new RadioRealButtonGroup.OnClickedButtonListener() {

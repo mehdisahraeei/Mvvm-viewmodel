@@ -12,6 +12,7 @@ import com.my.viewmodel.R;
 import com.my.viewmodel.databinding.FragmenttwoBinding;
 import com.my.viewmodel.model.ModelFragments;
 import com.my.viewmodel.viewmodel.Viewmodel2;
+import lal.adhish.gifprogressbar.GifView;
 
 public class fragment2 extends Fragment {
 
@@ -23,6 +24,9 @@ public class fragment2 extends Fragment {
                 fragmenttwo,null,false);
         binding.setModeltwo(new Viewmodel2(new ModelFragments("log up")));
         View view=binding.getRoot();
+
+        GifView gif2=view.findViewById(R.id.Gif2);
+        gif2.setImageResource(R.drawable.gif2);
 
         return view;
     }
